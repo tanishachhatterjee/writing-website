@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informational — Tanisha C.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="informational.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">Tanisha C.</a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#journey">Journey</a></li>
+        <li class="dropdown">
+            <a href="index.html#writing" class="active">Writing ▾</a>
+            <div class="dropdown-content">
+                <a href="narratives.html">Narratives</a>
+                <a href="informational.html" class="active">Informational</a>
+                <a href="fiction.html">Fiction</a>
+            </div>
+        </li>
+        <li><a href="interviews.html">Interviews</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+    </ul>
+</nav>
+
+<header class="page-header">
+    <div class="page-header-inner">
+        <div class="page-eyebrow">Writing / Informational</div>
+        <h1 class="page-title">Writing that<br><em>makes you think.</em></h1>
+        <p class="page-desc">Articles about topics that are important to me, written from my research to help educate others.</p>
+    </div>
+</header>
+
+
+
+<main class="reading-room">
+    <div class="list-header">
+        <span class="list-count" id="list-count">7 pieces</span>
+        <span class="list-sort">Most recent first</span>
+    </div>
+    <ul class="article-list">
+
+        <li id="ev-site-row" class="article-row" data-tags="environment" data-reveal>
+            <div class="article-left">
+              <div class="article-tags">
+                <span class="tag tag-informational">Informational</span>
+                <span class="tag tag-environment">Environment</span>
+                <span class="tag tag-technology">Technology</span>
+              </div>
+              <div class="article-title">Electric Cars: The Future of Transportation</div>
+              <div class="article-blurb">A website created from scratch to inform readers about electric vehicles. This includes the technology, environmental impact, and the companies driving the revolution of EVs.</div>
+            </div>
+           
+            <div class="article-right">
+                <span class="article-grade">8th Grade</span>
+                <span class="article-date">April 2024</span>
+              <span class="read-arrow">→</span>
+            </div>
+           
+            <div class="article-full">
+    <div class="full-divider"></div>
+
+    <!-- ===== EMBEDDED EV MINI-SITE ===== -->
+    <style>
+      /* ---- EV site scoped styles ---- */
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap");
+
+      #ev-site-row,
+      #ev-site-row .article-left,
+      #ev-site-row .article-full {
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+
+      #ev-site {
+        --ev-navy:   #1a2f6e;
+        --ev-mid:    #2d4fa0;
+        --ev-sky:    #b4caee;
+        --ev-light:  #dce8f7;
+        --ev-white:  #f0f6ff;
+        --ev-accent: #4fc3f7;
+        font-family: 'DM Sans', sans-serif;
+        background: var(--ev-light);
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid rgba(26,47,110,0.18);
+        color: var(--ev-navy);
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      /* NAV */
+      #ev-site .ev-header {
+        background: var(--ev-navy);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 36px;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      #ev-site .ev-logo {
+        font-family: 'DM Serif Display', serif;
+        font-size: 26px;
+        color: var(--ev-white);
+        text-decoration: none;
+        letter-spacing: -0.3px;
+        flex-shrink: 0;
+      }
+      #ev-site .ev-logo span {
+        color: var(--ev-accent);
+      }
+      #ev-site .ev-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-left: auto;
+      }
+      .ev-nav-link {
+        font-size: 13px;
+        font-weight: 500;
+        color: rgba(240,246,255,0.75);
+        text-decoration: none;
+        padding: 6px 14px;
+        border-radius: 20px;
+        border: 1px solid transparent;
+        transition: all 0.2s ease;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+      }
+      .ev-nav-link:hover {
+        color: var(--ev-white);
+        background: rgba(255,255,255,0.1);
+      }
+      .ev-nav-link.ev-active {
+        color: var(--ev-navy);
+        background: var(--ev-accent);
+        border-color: var(--ev-accent);
+      }
+
+      /* CONTENT AREA */
+      #ev-site .ev-body {
+        padding: 40px 44px 52px;
+        min-height: 440px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      /* HERO STRIP (About page) */
+      #ev-site .ev-hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+        align-items: center;
+        margin-bottom: 0;
+      }
+      #ev-site .ev-hero-text h2 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 28px;
+        color: var(--ev-navy);
+        margin: 0 0 6px;
+        line-height: 1.2;
+      }
+      #ev-site .ev-hero-text h2 em {
+        font-style: italic;
+        color: var(--ev-mid);
+      }
+      #ev-site .ev-hero-text p {
+        font-size: 15px;
+        line-height: 1.75;
+        color: #2a3d70;
+        margin: 0;
+        font-weight: 400;
+      }
+      #ev-site .ev-hero-img {
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 3px solid var(--ev-white);
+        box-shadow: 0 8px 28px rgba(26,47,110,0.18);
+        display: block;
+      }
+
+      /* STAT PILLS */
+      #ev-site .ev-stats {
+        display: flex;
+        gap: 12px;
+        margin: 24px 0 0;
+        flex-wrap: wrap;
+      }
+      #ev-site .ev-stat {
+        background: var(--ev-navy);
+        color: var(--ev-white);
+        border-radius: 10px;
+        padding: 12px 18px;
+        flex: 1;
+        min-width: 120px;
+        text-align: center;
+      }
+      #ev-site .ev-stat-num {
+        font-family: 'DM Serif Display', serif;
+        font-size: 22px;
+        color: var(--ev-accent);
+        display: block;
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+      #ev-site .ev-stat-label {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        color: rgba(240,246,255,0.7);
+      }
+
+      /* PAGE TITLE */
+      #ev-site .ev-page-title {
+        font-family: 'DM Serif Display', serif;
+        font-size: 26px;
+        color: var(--ev-navy);
+        margin: 0 0 20px;
+        padding-bottom: 14px;
+        border-bottom: 2px solid var(--ev-sky);
+        line-height: 1.2;
+      }
+
+      /* BODY TEXT */
+      #ev-site p.ev-p {
+        font-size: 15px;
+        line-height: 1.78;
+        color: #2a3d70;
+        margin: 0 0 18px;
+        font-weight: 400;
+      }
+      #ev-site p.ev-p:last-child { margin-bottom: 0; }
+
+      /* IMAGE PAIRS */
+      #ev-site .ev-img-pair {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin: 28px 0;
+      }
+      #ev-site .ev-img-pair img,
+      #ev-site .ev-img-solo {
+        width: 100%;
+        border-radius: 10px;
+        border: 3px solid var(--ev-white);
+        box-shadow: 0 4px 16px rgba(26,47,110,0.14);
+        display: block;
+        object-fit: cover;
+      }
+
+      /* COMPANY CARDS */
+      #ev-site .ev-company-card {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 24px;
+        align-items: start;
+        background: var(--ev-white);
+        border-radius: 12px;
+        padding: 22px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(26,47,110,0.1);
+        box-shadow: 0 2px 10px rgba(26,47,110,0.07);
+      }
+      #ev-site .ev-company-card:last-child { margin-bottom: 0; }
+      #ev-site .ev-company-logo {
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: contain;
+        border-radius: 8px;
+        background: var(--ev-light);
+        padding: 12px;
+        border: 1px solid var(--ev-sky);
+        box-sizing: border-box;
+      }
+      #ev-site .ev-company-name {
+        font-family: 'DM Serif Display', serif;
+        font-size: 18px;
+        color: var(--ev-navy);
+        margin: 0 0 8px;
+      }
+
+      /* AUTHOR CARD */
+      #ev-site .ev-author-card {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 32px;
+        align-items: start;
+        background: var(--ev-white);
+        border-radius: 12px;
+        padding: 28px;
+        border: 1px solid rgba(26,47,110,0.1);
+      }
+      #ev-site .ev-author-photo {
+        width: 100%;
+        aspect-ratio: 3/4;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 3px solid var(--ev-sky);
+        box-shadow: 0 4px 16px rgba(26,47,110,0.14);
+        display: block;
+      }
+      #ev-site .ev-author-card h2 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 22px;
+        color: var(--ev-navy);
+        margin: 0 0 14px;
+      }
+
+      /* EV FOOTER */
+      #ev-site .ev-footer {
+        background: var(--ev-navy);
+        text-align: center;
+        padding: 14px;
+        color: rgba(240,246,255,0.55);
+        font-size: 12px;
+        letter-spacing: 0.3px;
+      }
+      #ev-site .ev-footer a { color: var(--ev-accent); text-decoration: none; }
+
+      /* responsive */
+      @media (max-width: 600px) {
+        #ev-site .ev-hero { grid-template-columns: 1fr; }
+        #ev-site .ev-img-pair { grid-template-columns: 1fr; }
+        #ev-site .ev-company-card { grid-template-columns: 1fr; }
+        #ev-site .ev-author-card { grid-template-columns: 1fr; }
+        #ev-site .ev-body { padding: 24px 20px 36px; }
+        #ev-site .ev-header { padding: 14px 20px; }
+      }
+
+      /* Override drop-cap from informational.css */
+      #ev-site p.ev-p::first-letter { font-size: inherit; font-weight: inherit; float: none; line-height: inherit; margin: 0; color: inherit; }
+    </style>
+
+    <div id="ev-site" onclick="event.stopPropagation()">
+
+      <div class="ev-header">
+        <a href="#" onclick="event.preventDefault()" class="ev-logo">Electric<span>Cars</span></a>
+        <nav class="ev-nav">
+          <a href="#" onclick="event.preventDefault(); event.stopPropagation(); evPage('about')"     id="ev-btn-about"     class="ev-nav-link">About</a>
+          <a href="#" onclick="event.preventDefault(); event.stopPropagation(); evPage('mechanics')" id="ev-btn-mechanics" class="ev-nav-link">Mechanics</a>
+          <a href="#" onclick="event.preventDefault(); event.stopPropagation(); evPage('impact')"    id="ev-btn-impact"    class="ev-nav-link">Impact</a>
+          <a href="#" onclick="event.preventDefault(); event.stopPropagation(); evPage('companies')" id="ev-btn-companies" class="ev-nav-link">Companies</a>
+          <a href="#" onclick="event.preventDefault(); event.stopPropagation(); evPage('author')"    id="ev-btn-author"    class="ev-nav-link">Author</a>
+        </nav>
+      </div>
+
+      <div class="ev-body">
+
+        <!-- ABOUT -->
+        <div id="ev-about" class="ev-page">
+          <!-- top row: stats left, photo right -->
+          <div class="ev-hero">
+            <div class="ev-stats" style="flex-direction:column; margin:0;">
+              <div class="ev-stat"><span class="ev-stat-num">50%</span><span class="ev-stat-label">of greenhouse gas emissions from transport</span></div>
+              <div class="ev-stat"><span class="ev-stat-num">80%</span><span class="ev-stat-label">of air pollutants from vehicles</span></div>
+              <div class="ev-stat"><span class="ev-stat-num">0</span><span class="ev-stat-label">emissions from EVs</span></div>
+            </div>
+            <img src="environemntEV (1).jpeg" alt="EV in a healthy environment" class="ev-hero-img">
+          </div>
+          <!-- text below -->
+          <p class="ev-p" style="margin-top:24px;">Electric cars are vehicles that are powered by electrical motors that draw electricity from a battery. Since EVs run on electricity they produce zero emissions improving air quality and reducing the overall environmental impact. EVs have significant benefits to our community such as creating a sustainable and environmentally friendly future for generations to come. Our generation's transportation is responsible for approximately 50% of greenhouse gas emissions and 80% of air pollutants. This is not only dangerous to the environment but to humans as well. Gasoline vehicles burn fossil fuels and when they do this they release large amounts of carbon dioxide, a greenhouse gas, into the air that we breathe causing pollution. Additionally, as greenhouse gas emissions surround the Earth, they trap the sun's heat leading to global warming and climate change. It's our job to put an end to global warming and the first step is to transition to electric cars.</p>
+        </div>
+
+        <!-- MECHANICS -->
+        <div id="ev-mechanics" class="ev-page" style="display:none;">
+          <h2 class="ev-page-title">The Technology Behind Electric Cars</h2>
+          <p class="ev-p">Electric cars are powered by rechargeable batteries that store electricity. When you charge the car, the batteries store electricity to operate. The electric motor is like an engine but it runs on electricity instead of gas. When you press the accelerator, the electric motor receives electricity from the battery, and then controls the speed of the car. Unlike traditional vehicles, EVs don't have multiple gears to shift the car between accelerating and decelerating. The gears are necessary to gasoline vehicles because it allows the driver to run the engine at different speeds. But EVs have electric motors that generate a large range of different speeds defeating the need of gears. The wheels of an EV are powered by the electric motor, and when the brake is used, some of the energy is captured and is used to recharge the batteries. Altogether, EVs are powered by batteries that store electricity and are energy efficient.</p>
+          <div class="ev-img-pair">
+            <img src="evdiagram2 (1).jpeg" alt="EV Diagram">
+            <img src="evwithwords (1).jpeg" alt="EV with labels">
+          </div>
+        </div>
+
+        <!-- IMPACT -->
+        <div id="ev-impact" class="ev-page" style="display:none;">
+          <h2 class="ev-page-title">The Promising Future of Electric Cars</h2>
+          <p class="ev-p">Along with being an eco-friendly mode of transportation, EVs are also affordable vehicles. EVs may be more expensive during the buying process but the maintenance fee is half as much as gasoline drivers have to pay. Customers who own electric cars save an average of $4,600 in repair and maintenance costs. However, EVs are the newest technology when it comes to vehicles making them more expensive. But as the production of EVs continues to increase the price will eventually fall making it more affordable.</p>
+          <div class="ev-img-pair" style="margin: 20px 0;">
+            <img src="coolev.png" alt="Cool EV">
+            <img src="futureev.jpeg" alt="Future EV">
+          </div>
+          <p class="ev-p">The future of EVs are quite promising considering ongoing technology advancements, an increase of investments, and growing consumer interest. It's predicted that there will be improvements in the battery such as the energy density, charging speed, and cost reduction. Also autonomous driving technologies may become more widespread in EVs. Enhancing the overall driving experience and contributing to the development of new technology in transportation systems. Governments may also begin implementing stricter regulations about emissions, further encouraging the shift towards EVs. Additionally, governments are investing in buildings for charging the vehicles, making EVs more practical for everyday use. Lastly, as EVs become more popular there will be more competition and variety in the vehicles. Allowing customers to have more choices in affordable EVs. EVs are the future of technology.</p>
+        </div>
+
+        <!-- COMPANIES -->
+        <div id="ev-companies" class="ev-page" style="display:none;">
+          <h2 class="ev-page-title">Companies Shaping the Future</h2>
+          <div class="ev-company-card">
+            <img src="tesla.webp" alt="Tesla" class="ev-company-logo">
+            <div>
+              <h3 class="ev-company-name">Tesla</h3>
+              <p class="ev-p">Tesla was founded on July 1, 2003, San Carlos, CA by Martin Eberhard and Marc Tarpenning. The current CEO, Elon Musk, joined the company soon after it was founded and became the largest investor of the company. Tesla's mission is to transition the world to sustainable energy by building products that replace the planet's biggest polluters, gasoline vehicles. Tesla is doing this by making vehicles that are powered by solar energy running on batteries. The company installed 32,400 kW of solar at their factories and plans on adding more. Altogether, Tesla strives to transition the world to sustainable energy through solar-powered vehicles.</p>
+            </div>
+          </div>
+          <div class="ev-company-card">
+            <img src="lucid.jpeg" alt="Lucid Motors" class="ev-company-logo">
+            <div>
+              <h3 class="ev-company-name">Lucid Motors</h3>
+              <p class="ev-p">Lucid Motors was founded in 2008 by former Tesla Motors Vice President, Bernard Tse, co-founder of Astoria Networks Sam Weng, and inventor Sheaupyng Lin. Lucid wants to promote the acceptance of sustainable energy by creating captivating electric vehicles centered around the human experience. The company is making an impact by using fewer batteries and less grid electricity. This has reduced the demand for critical materials and their environmental impact. All in all, Lucid aims to create sustainable vehicles without compromising the overall experience of driving.</p>
+            </div>
+          </div>
+          <div class="ev-company-card">
+            <img src="nio.webp" alt="NIO" class="ev-company-logo">
+            <div>
+              <h3 class="ev-company-name">NIO</h3>
+              <p class="ev-p">NIO was founded in November 2014 by William Li, a Chinese business executive and entrepreneur. NIO's mission is to shape a joyful lifestyle around the premium smart electric vehicle market. NIO plans to build a green ecosystem in the Sanjiangyuan National Park and provide its smart electric vehicles along with building battery charging facilities. NIO has launched Blue Sky Lab, an innovation that recycles materials in automobile manufacturing, such as airbags, seat belts, microfiber, leather, and aluminum, to create fashion products. Overall, NIO aims to promote sustainable car manufacturing to bring positive changes to communities.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- AUTHOR -->
+        <div id="ev-author" class="ev-page" style="display:none;">
+          <h2 class="ev-page-title">About the Author</h2>
+          <div class="ev-author-card">
+            <img src="me!! (1).JPG" alt="Author" class="ev-author-photo">
+            <div>
+              <h2>Tanisha Chatterjee</h2>
+              <p class="ev-p">Hi, my name is Tanisha Chatterjee and I built this website from scratch using HTML & CSS! I am very interested in technology, especially about electric vehicles and autonomous driving. That's one of the reasons I built this website because I want more people to know about EVs and their benefits to the environment and our community. I enjoy learning about technology that makes our planet a better place especially for future generations. I hope that in the next few years I can become a stronger advocate for electric vehicles and autonomous driving. Thank you for visiting my website!</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end ev-body -->
+
+      <div class="ev-footer">
+        © 2024 <a href="https://repl.it/@tanishachatterjee" target="_blank">tanishachatterjee</a>
+      </div>
+
+    </div><!-- end ev-site -->
+
+    <script>
+      function evPage(name) {
+        document.querySelectorAll('.ev-page').forEach(p => p.style.display = 'none');
+        document.querySelectorAll('.ev-nav-link').forEach(b => b.classList.remove('ev-active'));
+        document.getElementById('ev-' + name).style.display = 'block';
+        document.getElementById('ev-btn-' + name).classList.add('ev-active');
+      }
+      document.getElementById('ev-btn-about').classList.add('ev-active');
+    </script>
+
+    <br>
+    <button class="close-btn">↑ Close</button>
+  </div>
+</li>
+
+        <li class="article-row" data-tags="informational environment" data-reveal>
+            <div class="article-left">
+                <div class="article-tags">
+                    <span class="tag tag-informational">Informational</span>
+                    <span class="tag tag-environment">Environment</span>
+                </div>
+                <h2 class="article-title">Why are Wildfires Destructive?</h2>
+                <p class="article-blurb">Wildfires destroy homes, harm wildlife, pollute the air, and put people’s health at risk. Understanding their effects can help us stay safe, protect communities, and reduce their impact on the environment.</p>
+                <div class="article-full">
+                    <div class="full-divider"></div>
+                    <div class="full-body">
+                        <h2>Introduction</h2>
+                        <p>Big orange flames start spreading through a forest. Animals flee from the scene as chaos erupts. Firefighters come with their water hoses and extinguishers. As the smoke begins rising, firefighters begin coughing. Soon the wildfire gets out of control, people start fleeing from their homes with their loved ones. As the traffic gets worse, people start getting out of their cars and start fleeing by foot. This is what happens when a wildfire begins. It may seem manageable at first but soon gets out of hand. People have been suffering from the effects of wildfires for years. Many got lung cancer from the smoke while evacuating their homes, while others got into a car accident because they couldn’t see the road ahead of them due to the smoke. It is critical that we save our resources before another disaster strikes. Let’s finally take action and learn more about why wildfires are destructive.</p>
+                        <h2>Trees Burned Down & Release of Carbon</h2>
+                        <p>Generally wildfires occur in forests which have trees and other plants.You may already know that trees produce a type of oxygen called CO2 (carbon dioxide), which is the type of oxygen that we breathe. When trees are burned down, they start producing a new type of oxygen, which is not safe for humans. This new type of oxygen is called carbon. For example, if you were to breathe in carbon you would start having difficulty breathing, which could soon lead you to the hospital.</p>
+                        <p>It may feel like if one tree is burned down it doesn’t affect the environment, but it does. Soon after one tree is burned down the fire starts spreading tree to tree, which soon affects climate change. Carbon can increase global warming because once carbon continues building up, it will soon start melting all of the ice around the world, which soon endangers multiple species such as polar bears or penguins. If trees continue burning down, there will soon be many extinct species.</p>
+                        <p>Therefore, when trees are burned down the new oxygen that is released from trees not only affects our lungs but also climate change. So make sure to stay safe if by chance there is a wildfire burning near you.</p>
+                        <h2>Bad Air Quality</h2>
+                        <p>Many counties in California have been quarantined this year due to the bad air quality from wildfires like the Dixie fire. Students are not allowed to have recess or lunch outdoors. Many people have been staying at home and have not yet left their homes. This impacts our bodies because when we are inside, we can’t exercise as much as we can outside. For example, when we are outside, we can run around and jog around our neighborhood. However, when we are locked up inside, we can’t run around without bumping into furniture or other objects. Many people don’t have exercising equipment at home, so they have to rely on running or other exercises that require outdoors. It can be dangerous if someone were to run or jog when a wildfire broke out because the smoke would soon reach their lungs, which can lead to them having an asthma attack or other breathing problems.</p>
+                        <p>Speaking of health problems, wildfires can cause people with asthma to not go outside in the smoke without coughing and choking. Firefighters can possibly get lung cancer if they don’t wear special masks when extinguishing a fire. Even if they wear them they can still get lung cancer and other breathing problems, which can possibly soon lead to their death if their breathing problems continue getting worse.</p>
+                        <p>Due to the smoke and bad air quality, many people need special care so that they can breathe properly. When wildfires break out, they send many people to hospitals because they got burns, they got into a car accident, or they are having trouble breathing. This also means many people need to pay for hospital or doctor visits, and if a patient keeps visiting, they can soon start losing lots of money especially if they don't have medical insurance. While people are evacuating their homes they may be speeding through the thick clouds of smoke and they can possibly crash into someone else because the road ahead of them is unclear due to the smoke. “We were surrounded by fire. We were driving through fire on each side of the road,” Police Officer Mark Bass said. “Nobody could hardly see the road ahead. It was a very dangerous situation,” said Mark Bass.This can also cause people to go to hospitals. As you can see, wildfires even have an effect on money and health, so it is very important that you safely evacuate your home or wherever you are in case of a wildfire</p>
+                        <h2>Homelessness Rising Due to Wildfires</h2>
+                        <p>Many homes have been burned down due to severe wildfires. This is causing homelessness to increase because when someone’s home is burned down they might not have anywhere to go or to live because they don’t have any family living near them. This means they need to live on the unsafe streets or homeless shelters. But there may not be any homeless shelters or the homeless shelters are all full. This means someone might need to live on the streets. This will soon become a problem because in California wildfires are pretty common and happen multiple times a year. In San Francisco, California there are many homeless people living on the streets and if more homes are burned down the population of San Francisco might continue growing which can become a problem because if there are more people more jobs will need to be required.</p>
+                        <p>In 1980, Mount St.Helens erupted and started many wildfires. About $1.1 billion of property was damaged due to the severe wildfires and lava caused by the eruption. Sadly, 57 people passed away because of the wildfires and lava. The news about the eruption spread fast. Soon news channels started reporting about the eruption.“That is so scary,” said 12 year old Lisa Hodson. After watching the news about the eruption. According to Lisa Hodson there was a lot of ash and soot in the air around the area where Mount St.Helens erupted. Lisa Hodson also said that there were some people in the way of the lava.</p>
+                        <p>Every year homes are burned down due to wildfires and people become homeless. We need to improvise and think smarter. One way we can do this is by opening more homeless shelters around areas where wildfires are more common and more severe. Let’s end homelessness!</p>
+                        <h2>Impact on Wildlife & Plants</h2>
+                        <p>Imagine your favorite animal going extinct. For example, imagine your favorite animal is a bird. A lot of birds live in forests which is a common place where wildfires occur. Think about a bird’s family trying to fly away from the smoke and fire. Some might lose their family because they can’t see what direction they went due to the smoke. Or some of the older birds and younger birds might die because they can't survive the bright red and orange flames. </p>
+                        <p>Wildfires make wildlife find more habitats. This can be a major con or problem  because while animals are trying to find a new home or habitat they might run into humans or hunters they have been trying to avoid. But everything has its own pros and cons. But look at the bright side luckily most animals can use their senses to detect when a fire is started. For example, they can tell you their sense of smell to detect if they smell anything burning. They can also use their sense of sight to see if they can see any smoke or fire coming their way. Another pro of wildfires is that it affects a species named jack pine which can only produce seeds to grow more trees with fire. A lot of plants die in the forest because they don’t get enough sunlight because there are too many trees blocking the sunlight. But when fires burn down trees they allow other plants to grow in the sunlight. Wildfires can also deplete food for animals. For example, generally when wildfires occur they burn down plants which a lot of animals survive on. As you can see, it's quite difficult to tell if wildfires are good or bad because they have a lot of pros and cons about it.</p>
+                        <h2>Conclusion</h2>
+                        <p>Wildfires have different effects on everything. In this article I discussed different things that are affected by wildfires. For example, I discussed that wildfires affect the oxygen that we breathe. I also discussed that wildfires affect climate change. The message I hope to spread is why wildfires are destructive and how we can prevent wildfires from affecting our daily lives.</p>
+                    </div>
+                    <button class="close-btn">↑ Close</button>
+                </div>
+            </div>
+            <div class="article-right">
+                <span class="article-grade">6th Grade</span>
+                <span class="article-date">August 2022</span>
+                <span class="read-arrow">→</span>
+            </div>
+        </li>
+
+        <li class="article-row" data-tags="argumentative" data-reveal>
+            <div class="article-left">
+                <div class="article-tags">
+                    <span class="tag tag-argumentative">Argumentative</span>
+                </div>
+                <h2 class="article-title">Vote No on Chocolate Milk</h2>
+                <p class="article-blurb">Chocolate milk may seem tasty, but it’s full of sugar and can lead to health problems and addiction. Experts, parents, and research show it’s better to avoid it, so schools should keep it off the menu.</p>
+                <div class="article-full">
+                    <div class="full-divider"></div>
+                    <div class="full-body">
+                        <p>At the beginning of the school year at Stocklmeir we had chocolate milk but eventually the school stopped providing it for us. Some people believe that chocolate milk should still be provided while others think it shouldn’t. Because of this people are reconsidering their decision about chocolate milk. I believe that chocolate milk should not be brought back to school because it's unhealthy, kids get addicted, and parents and experts agree.</p>
+                        <p>Critics like the article Flavored Milk FAQ argue that children drink more milk when it’s flavored which makes them gain more vitamins and nutrients. While it might be true that children drink more milk. Still, all in all, I think that if children are only drinking milk when it’s flavored, is a big problem because in life children won't always get what they want. So one reason why I vote no to chocolate milk is because it's unhealthy. According to Chocolate Milk: More Harmful than Healthful, “chocolate milk has a sky-high sugar content.” This shows that chocolate milk has a lot of sugar, which means that if kids drink too much of it they might become obese. When kids drink a lot of sugar they tend to get very hyper, which is a big problem considering that they will be in class learning. So when kids start getting hyper they are unable to focus and they not only disturb their learning but the students around them as well. According to Jamie Oliver, a food lover and activist, states that, “sugary drinks are a major risk factor for developing type 2 diabetes and heart disease.” This shows that children could be at risk of developing a deadly disease that adults could have prevented. Also children may even die because heart disease is very dangerous. Ann Cooper, the head of nutrition services for the Boulder Valley School District in Louisville, Colorado, was the cause of the chocolate milk ban. This shows that even nutritionists believe that chocolate milk is unhealthy. It also shows that nutritionists think that white milk or other options are healthier than chocolate milk. As you can see, chocolate milk is unhealthy because it has too much sugar and because it can cause diseases like type 2 diabetes and heart disease. </p>
+                        <p>Another reason why chocolate milk should not be brought back to Stocklmeir is because kids get addicted. According to the article Chocolate Milk: More Harmful Than Healthful, states that, “some children consume as many as 10 or even 15 cartons of chocolate milk in a week at school.” This shows that kids are getting more and more addicted day by day. Also if children are drinking this much sugar they won't feel hungry enough to be able to eat healthy nutritious food. Jamie Oliver, an expert, filled a school bus with 57 tons of sand, representing the amount of sugar children in the United States consume in just one week at school. This shows that students are consuming an absurd amount of sugar. 57 tons is also 114,000 pounds! Children need to stop consuming all this sugar otherwise they will suffer a big consequence like falling severely sick. Chole Baker, an investigative reporter, stated that, “it’s an out-of-control problem.” This shows that even outsiders believe that children are becoming wildly addicted to sugar. To add on, obesity remains a growing problem in the United States. Since this is happening schools have been getting more attention from people outside of schools, which shows that the problem is getting even more terrible. Thus, children all around the world could be saved from this villain (chocolate milk) that we can easily get rid of. Therefore, we should not bring back chocolate milk because kids get addicted. Some people like Melissa Dobbins still may disagree, saying that chocolate milk is critical for a child’s diet. I challenge this. I don’t think this is true because there are different alternatives to milk that have the same 9 essential nutrients like milk or cheese. Also chocolate milk also has too much sugar which is not good for kids.</p>
+                        <p>My most important reason why chocolate milk should not be brought back to school is because parents and experts agree. Chloe Baker, an investigative reporter, interviewed a child who stated, “ The only time I get chocolate milk is when I go to school.” This shows that even parents think that chocolate milk isn't a healthy choice for their child. Also if a parent is not comfortable about something at home then it's not okay for it to happen at school. New York City Mayor, Michael Bloomberg, was among those people who agreed with the ban. This shows that the problem has gotten so bad that it has even reached a city mayor who agrees with the ban. And since the government probably wants what’s best for us we should believe them. Also the New York City Board of Health approved the ban. This shows that even experts believe chocolate milk is very unhealthy and is not safe for our community. And since the problem is so bad the board even decided to go as far as banning it. Therefore, chocolate milk should not be brought back to Stocklmeir because parents and experts agree.</p>
+                        <p>I vote no on chocolate milk because it isn’t good for our bodies, children drink too much of it, and experts and parents agree with the ban. As you can see chocolate milk may have some good parts to it but overall it's better to avoid it because it doesn’t do much good as it does harm. Lastly, the life lesson here is that it's important to protect our community by keeping it healthy and keeping it happy and we can do this by just avoiding our villain (chocolate milk). So when you decide to vote if chocolate milk should be brought back to school, think about all the healthy lives you could save and protect from all of those cruel diseases.</p>
+                    </div>
+                    <button class="close-btn">↑ Close</button>
+                </div>
+            </div>
+            <div class="article-right">
+                <span class="article-grade">5th Grade</span>
+                <span class="article-date">April 2022</span>
+                <span class="read-arrow">→</span>
+            </div>
+        </li>
+
+        <li class="article-row" data-tags="informational" data-reveal>
+            <div class="article-left">
+                <div class="article-tags">
+                    <span class="tag tag-informational">Informational</span>
+                </div>
+                <h2 class="article-title">Too Many Items in the Lost & Found</h2>
+                <p class="article-blurb">The lost & found at Stocklmeir Elementary is overflowing with unclaimed items. Students need to take responsibility and check the cart so nothing goes to waste.</p>
+                <div class="article-full">
+                    <div class="full-divider"></div>
+                    <div class="full-body">
+                        <p>The lost & found cart at Stocklmeir Elementary School, Sunnyvale CA receives many lost items everyday. All the items have started to pile up in the cart. Many of the owners of the lost items have not come back to the lost & found to receive their lost items. Some students believe that if they go to the lost & found to find their lost item their time will be wasted.</p>
+                        <p>This is slowly becoming a problem at Stocklmeir Elementary School, because if the cart continues piling up with items there will be no more space for any new lost items. Which then will be harder for the owner to find their lost item or items.</p>
+                        <p>Students will need to start taking responsibility with their items. Or sooner than later Stocklmeir might need to remove the lost & found cart because it keeps piling up. Tanisha Chatterjee a student at Stocklmeir believes that, “Students who lost items should go to the lost & found and find their item because otherwise its a waste of money for whoever bought the item for them.”</p>
+                        <p>If this problem continues lots of money will be wasted for whoever bought an item for a student, and they lost it. It is important for the students who lost an item to go to the lost & found to search for their items or otherwise Stocklmeir might have to take the lost & found away.</p>
+                    </div>
+                    <button class="close-btn">↑ Close</button>
+                </div>
+            </div>
+            <div class="article-right">
+                <span class="article-grade">5th Grade</span>
+                <span class="article-date">February 2022</span>
+                <span class="read-arrow">→</span>
+            </div>
+        </li>
+
+        <li class="article-row" data-tags="informational" data-reveal>
+            <div class="article-left">
+                <div class="article-tags">
+                    <span class="tag tag-informational">Safety Report</span>
+                </div>
+                <h2 class="article-title">The Horrible Pushing Game</h2>
+                <p class="article-blurb">Kindergarteners at Stocklmeir Elementary started a dangerous game that caused several injuries. Increased supervision is needed to keep students safe.</p>
+                <div class="article-full">
+                    <div class="full-divider"></div>
+                    <div class="full-body">
+                        <p>On December 6, 2021 the kindergarteners at Stocklmeir Elementary School made a new game where they would bolt and pounce on each other. One witness even fell down and injured her leg very badly, and needed the assistance of an adult.</p>
+                        <p>Many of the 5th graders who volunteered to take care of the kindergarteners ordered and demanded the kindergarteners to immediately stop playing that game. But the kindergarteners refused to stop.</p>
+                        <p>Multiple of the kindergarteners continued getting seriously injured. Witnesses were not able to fully identify the mysterious suspects who started the game. The 5th graders tried to make up a new game, but reluctantly there were still some kids playing the harmful game.</p>
+                        <p>Although the kindergarteners enjoyed the game at first the fun quickly faded away as they continued playing. The game took an utter turn causing many of the kids to get injured. If this game continues thriving many of the kids will continue getting injured.</p>
+                        <p>This dreadful and pain inducing game needs to come to a halt at once. This harmful game needs to stop now.</p>
+
+                    </div>
+                    <button class="close-btn">↑ Close</button>
+                </div>
+            </div>
+            <div class="article-right">
+                <span class="article-grade">5th Grade</span>
+                <span class="article-date">December 2021</span>
+                <span class="read-arrow">→</span>
+            </div>
+        </li>
+
+        <li class="article-row" data-tags="informational" data-reveal>
+            <div class="article-left">
+                <div class="article-tags">
+                    <span class="tag tag-informational">Observational Report</span>
+                </div>
+                <h2 class="article-title">Sticker Problem</h2>
+                <p class="article-blurb">During a volunteer program at Stocklmeir Elementary, some kindergarteners tried to get extra stickers by lying, creating challenges for the reward system. Volunteers need to keep track so the system stays fair and effective.</p>
+                <div class="article-full">
+                    <div class="full-divider"></div>
+                    <div class="full-body">
+                        <p>On November 21, 2021 Tanisha Chatterjee and her friends went to a volunteering program at Stocklmeir Elementary school for 5th graders. Tanisha and her friends recently found out that they can give stickers to the kindergarteners if they pick up trash or do something kind.</p>
+                        <p>At first all the kindergarteners were picking up trash and being kind. But after some time, the kindergartens started lying to the 5th graders. “One kindergartener picked up 3 pieces of trash, so I gave her a sticker but after a few minutes she told me she lost her sticker. So I was about to give her another sticker but then I saw on the palm of her hand that there was a sticker I already had given her,” says Tanisha Chatterjee. </p>
+                        <p>The kindergarteners feel like whoever has the most stickers gets a prize, so they decide to lie because they're too young to understand that they only get 1 sticker. Tanisha and her friends continue taking care of the kindergarteners, but they keep asking for more stickers. </p>
+                        <p>So after lunch ended, Tanisha Chatterjee and her friends went to Ms.Mommer, the vice principal of Stocklmeir Elementary school. Tanisha and her friends told Ms.Mommer about what’s been happening with the stickers. Ms.Mommer told Tanisha Chatterjee and her friends, “to keep a track on which kids already got a sticker, and when it’s reasonable to give a sticker.”</p>
+                        <p>If the kindergarteners continue lying to the 5th graders, Ms.Lee (the teacher who supervises the lunch buddy meetings) might have to stop the sticker policy entirely.</p>
+                    </div>
+                    <button class="close-btn">↑ Close</button>
+                </div>
+            </div>
+            <div class="article-right">
+                <span class="article-grade">5th Grade</span>
+                <span class="article-date">November 2021</span>
+                <span class="read-arrow">→</span>
+            </div>
+        </li>
+
+        <li class="article-row" data-tags="informational" data-reveal>
+            <div class="article-left">
+                <div class="article-tags">
+                    <span class="tag tag-informational">Informational</span>
+                </div>
+                <h2 class="article-title">Wasted Food at Stocklmeir Elementary School</h2>
+                <p class="article-blurb">Students at Stocklmeir Elementary are leaving food and trash on the blacktop, creating a growing problem. It’s time for everyone to take responsibility and help keep the school clean.</p>
+                <div class="article-full">
+                    <div class="full-divider"></div>
+                    <div class="full-body">
+                        <p>Over the past few years, food has been neglected at Stocklmeir Elementary School, Sunnyvale CA. Students have been throwing and pushing food off the trays where the hot lunch lines are at Stocklmeir. Students of Stocklmier have been wasting their food and leaving it on the blacktop, with loads of items that were unopened.</p>
+                        <p>Milk cartons, apple slices, vegetables, and many more items are left on the blacktop multiple times in a school day. Students walk past all the wasted food every single day but don’t have the heart to take one second to throw it away to make their school 1% cleaner.</p>
+                        <p>On October 20,2021 Tanisha Chatterjee observed all the 3rd graders during their lunch break. Tanisha saw multiple kids throwing food at each other, and running to play without throwing away their trash. “All of these students feel like if they spend a few seconds throwing away their trash, their entire playtime will be over,” Tanisha says. Tanisha continues observing the students. Tanisha also notices that only about 5% of the students who were at lunch threw away their trash. While the rest ran to play.</p>
+                        <p>If this problem does not stop soon, food will start piling up on the blacktop. Sooner or later the students will need to start taking responsibility for their own trash before their lunch even might be taken away from them. </p>
+                    </div>
+                    <button class="close-btn">↑ Close</button>
+                </div>
+            </div>
+            <div class="article-right">
+                <span class="article-grade">5th Grade</span>
+                <span class="article-date">October 2021</span>
+                <span class="read-arrow">→</span>
+            </div>
+        </li>
+
+    </ul>
+</main>
+
+<footer class="footer">
+    <span>© 2026 Tanisha Chatterjee</span>
+    <span class="footer-logo">Tanisha Chatterjee</span>
+    <span>All rights reserved</span>
+</footer>
+
+<script src="informational.js"></script>
+</body>
+</html>

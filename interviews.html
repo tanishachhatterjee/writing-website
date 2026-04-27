@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interviews — Tanisha C.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .coming-soon {
+            min-height: calc(100vh - 64px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 48px;
+            position: relative;
+            background: linear-gradient(160deg, var(--sky) 0%, var(--fog) 60%);
+            overflow: hidden;
+        }
+
+        .coming-soon::before {
+            content: '';
+            position: absolute;
+            width: 500px; height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(200,224,245,0.5) 0%, transparent 70%);
+            top: -120px; right: -100px;
+            pointer-events: none;
+        }
+
+        .coming-soon::after {
+            content: '';
+            position: absolute;
+            width: 360px; height: 360px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(180,215,240,0.35) 0%, transparent 70%);
+            bottom: -80px; left: -80px;
+            pointer-events: none;
+        }
+
+        .coming-soon-inner {
+            position: relative;
+            z-index: 1;
+            opacity: 0;
+            animation: up 0.9s ease 0.2s forwards;
+        }
+
+        @keyframes up {
+            from { opacity: 0; transform: translateY(24px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .coming-eyebrow {
+            font-size: 10px;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            color: var(--soft);
+            margin-bottom: 24px;
+        }
+
+        .coming-title {
+            font-family: var(--serif);
+            font-size: clamp(52px, 8vw, 100px);
+            font-weight: 300;
+            line-height: 1.0;
+            letter-spacing: -2px;
+            color: var(--deep);
+            margin-bottom: 12px;
+        }
+
+        .coming-title em { font-style: italic; color: var(--soft); }
+
+        .coming-sub {
+            font-family: var(--serif);
+            font-size: 18px;
+            font-weight: 300;
+            font-style: italic;
+            color: var(--slate);
+            line-height: 1.6;
+            max-width: 440px;
+            margin: 0 auto 48px;
+        }
+
+        .coming-dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 52px;
+        }
+
+        .dot-pulse {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            background: var(--soft);
+            opacity: 0.3;
+            animation: pulse 1.4s ease infinite;
+        }
+
+        .dot-pulse:nth-child(2) { animation-delay: 0.2s; }
+        .dot-pulse:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50%       { opacity: 1;   transform: scale(1.4); }
+        }
+
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 13px 32px;
+            border: 1px solid rgba(26,46,68,0.18);
+            border-radius: 100px;
+            font-family: var(--sans);
+            font-size: 11px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--deep);
+            background: rgba(255,255,255,0.65);
+            backdrop-filter: blur(4px);
+            transition: background 0.25s, border-color 0.25s, transform 0.25s;
+        }
+
+        .back-home:hover { background: white; border-color: var(--soft); transform: translateY(-2px); }
+
+        @media (max-width: 640px) {
+            .coming-soon { padding: 48px 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">Tanisha C.</a>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#journey">Journey</a></li>
+        <li class="dropdown">
+            <a href="index.html#writing">Writing ▾</a>
+            <div class="dropdown-content">
+                <a href="narratives.html">Narratives</a>
+                <a href="informational.html">Informational</a>
+                <a href="fiction.html">Fiction</a>
+            </div>
+        </li>
+        <li><a href="interviews.html" class="active">Interviews</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+    </ul>
+</nav>
+
+<section class="coming-soon">
+    <div class="coming-soon-inner">
+        <div class="coming-eyebrow">Interviews</div>
+        <h1 class="coming-title">Coming<br><em>soon.</em></h1>
+        <p class="coming-sub">Written pieces that capture the experiences, insights, and perspectives of people in STEM through interviews I conduct. Check back — something good is on its way.</p>
+        <div class="coming-dots">
+            <div class="dot-pulse"></div>
+            <div class="dot-pulse"></div>
+            <div class="dot-pulse"></div>
+        </div>
+        <a href="index.html" class="back-home">← Back home</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <span>© 2026 Tanisha Chatterjee</span>
+    <span class="footer-logo">Tanisha Chatterjee</span>
+    <span>All rights reserved</span>
+</footer>
+
+</body>
+</html>
